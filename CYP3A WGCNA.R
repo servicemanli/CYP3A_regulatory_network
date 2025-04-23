@@ -1591,8 +1591,8 @@ head(CYP3A7_KEGGterm_gene)
 
 #----------------------- GO KEGG pathway visualization -------------------------
 
-## GO terms ¡ª¡ª CYP3A4(42),CYP3A5(22), CYP3A7(21)
-## KEGG terms ¡ª¡ª CYP3A4(6),CYP3A5(5), CYP3A7(3)
+## GO terms Â¡ÂªÂ¡Âª CYP3A4(42),CYP3A5(22), CYP3A7(21)
+## KEGG terms Â¡ÂªÂ¡Âª CYP3A4(6),CYP3A5(5), CYP3A7(3)
 
 library(clusterProfiler)
 library(topGO)  
@@ -2428,7 +2428,7 @@ dim(SmallIntestine_exprs)
 ## 25464 175
 
 SmallIntestine_exprs[1:3, 1:3]
-SmallIntestine_exprs = t(SmallIntestine_exprs) Òò
+SmallIntestine_exprs = t(SmallIntestine_exprs) Ã’Ã²
 SmallIntestine_exprs[1:3, 1:3]
 
 
@@ -2470,7 +2470,7 @@ colnames(smallIntestinehub_lncRNA_exprs)
 
 miRNA_gene = smallIntestine_hub_TF_lncRNA_miRNA_CYP3A4.5.7[smallIntestine_hub_TF_lncRNA_miRNA_CYP3A4.5.7$type == "miRNA",]
 miRNA_gene 
-## 1¸ömiRNA  MIR621
+## 1Â¸Ã¶miRNA  MIR621
 
 smallIntestinehub_miRNA_exprs = SmallIntestine_exprs[, match(miRNA_gene$gene_id, colnames(SmallIntestine_exprs))]
 smallIntestinehub_miRNA_exprs = data.frame(smallIntestinehub_miRNA_exprs) 
